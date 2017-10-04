@@ -103,17 +103,7 @@ vector<string> sortin(vector<string>in){
 	}
 	return hofaba;
 }
-bool allEqual(int **arr, int rows,int col)
-{
-    for(int i = 0; i < rows; ++i){
-        for(int j = 0; j < col; ++j){
-            if( *((arr+i*col) + j)){
-                return false;
-            }
-        }
-    }
-    return true;
-}
+
 int dash_compare(string a,string b){
 	for(int i=0;i<a.length();i++){
 		if(a[i]!=b[i]&&a[i]!='-'){return 0;}
